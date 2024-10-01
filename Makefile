@@ -6,7 +6,7 @@
 #    By: albrusso <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/07 14:16:03 by albrusso          #+#    #+#              #
-#    Updated: 2024/10/01 12:50:51 by albrusso         ###   ########.fr        #
+#    Updated: 2024/10/01 13:47:14 by albrusso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,48 +34,48 @@ DEFAULT	=	\033[0m
 ################################################################################
 #                                   FILES                                      #
 ################################################################################
-SRC		=	ft_isalnum.c         \
-			ft_isprint.c         \
-			ft_memcmp.c          \
-			ft_putchar_fd.c      \
-			ft_split.c           \
-			ft_strlcat.c         \
-			ft_strncmp.c         \
-			ft_substr.c          \
-			ft_atoi.c            \
-			ft_isalpha.c         \
-			ft_itoa.c            \
-			ft_memcpy.c          \
-			ft_putendl_fd.c      \
-			ft_strchr.c          \
-			ft_strlcpy.c         \
-			ft_strnstr.c         \
-			ft_tolower.c         \
-			ft_bzero.c           \
-			ft_isascii.c         \
-			ft_memmove.c         \
-			ft_putnbr_fd.c       \
-			ft_strdup.c          \
-			ft_strlen.c          \
-			ft_strrchr.c         \
-			ft_toupper.c         \
-			ft_calloc.c          \
-			ft_isdigit.c         \
-			ft_memchr.c          \
-			ft_memset.c          \
-			ft_putstr_fd.c       \
-			ft_strjoin.c         \
-			ft_strmapi.c         \
-			ft_strtrim.c         \
-			ft_striteri.c        \
-			ft_lstadd_back.c     \
-			ft_lstadd_front.c    \
-			ft_lstclear.c        \
-			ft_lstdelone.c       \
-			ft_lstiter.c         \
-			ft_lstlast.c         \
-			ft_lstnew.c          \
-			ft_lstsize.c
+SRC		=	mandatory/ft_isalnum.c         \
+			mandatory/ft_isprint.c         \
+			mandatory/ft_memcmp.c          \
+			mandatory/ft_putchar_fd.c      \
+			mandatory/ft_split.c           \
+			mandatory/ft_strlcat.c         \
+			mandatory/ft_strncmp.c         \
+			mandatory/ft_substr.c          \
+			mandatory/ft_atoi.c            \
+			mandatory/ft_isalpha.c         \
+			mandatory/ft_itoa.c            \
+			mandatory/ft_memcpy.c          \
+			mandatory/ft_putendl_fd.c      \
+			mandatory/ft_strchr.c          \
+			mandatory/ft_strlcpy.c         \
+			mandatory/ft_strnstr.c         \
+			mandatory/ft_tolower.c         \
+			mandatory/ft_bzero.c           \
+			mandatory/ft_isascii.c         \
+			mandatory/ft_memmove.c         \
+			mandatory/ft_putnbr_fd.c       \
+			mandatory/ft_strdup.c          \
+			mandatory/ft_strlen.c          \
+			mandatory/ft_strrchr.c         \
+			mandatory/ft_toupper.c         \
+			mandatory/ft_calloc.c          \
+			mandatory/ft_isdigit.c         \
+			mandatory/ft_memchr.c          \
+			mandatory/ft_memset.c          \
+			mandatory/ft_putstr_fd.c       \
+			mandatory/ft_strjoin.c         \
+			mandatory/ft_strmapi.c         \
+			mandatory/ft_strtrim.c         \
+			mandatory/ft_striteri.c        \
+			bonus/ft_lstadd_back.c     \
+			bonus/ft_lstadd_front.c    \
+			bonus/ft_lstclear.c        \
+			bonus/ft_lstdelone.c       \
+			bonus/ft_lstiter.c         \
+			bonus/ft_lstlast.c         \
+			bonus/ft_lstnew.c          \
+			bonus/ft_lstsize.c
 
 OBJ	=	$(addprefix $(OBJ_DIR)/, $(SRC:.c=.o))
 
@@ -92,7 +92,8 @@ $(OBJ_DIR)/%.o: %.c | $(OBJ_DIR)
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_DIR):
-	@mkdir -p $(OBJ_DIR)/
+	@mkdir -p $(OBJ_DIR)/mandatory
+	@mkdir -p $(OBJ_DIR)/bonus
 
 clean:
 	@for file in $(OBJ); do \
