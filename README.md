@@ -40,7 +40,6 @@ To use **libft** in your own project:
    ```bash
    git clone https://github.com/yourusername/libft.git
 
-
 2. Build the library:
    ```bash
    make
