@@ -6,7 +6,7 @@
 #    By: albrusso <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/07 14:16:03 by albrusso          #+#    #+#              #
-#    Updated: 2024/10/01 13:47:14 by albrusso         ###   ########.fr        #
+#    Updated: 2024/10/30 14:27:52 by albrusso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,14 +68,15 @@ SRC		=	mandatory/ft_isalnum.c         \
 			mandatory/ft_strmapi.c         \
 			mandatory/ft_strtrim.c         \
 			mandatory/ft_striteri.c        \
-			bonus/ft_lstadd_back.c     \
-			bonus/ft_lstadd_front.c    \
-			bonus/ft_lstclear.c        \
-			bonus/ft_lstdelone.c       \
-			bonus/ft_lstiter.c         \
-			bonus/ft_lstlast.c         \
-			bonus/ft_lstnew.c          \
-			bonus/ft_lstsize.c
+			bonus/ft_lstadd_back.c         \
+			bonus/ft_lstadd_front.c        \
+			bonus/ft_lstclear.c            \
+			bonus/ft_lstdelone.c           \
+			bonus/ft_lstiter.c             \
+			bonus/ft_lstlast.c             \
+			bonus/ft_lstnew.c              \
+			bonus/ft_lstsize.c             \
+			bonus/ft_lstmap.c
 
 OBJ	=	$(addprefix $(OBJ_DIR)/, $(SRC:.c=.o))
 
